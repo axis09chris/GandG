@@ -1,0 +1,108 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content> -->
+
+<ion-content>
+  //menu or the hamburger menu of the page
+  <ion-menu contentId="main-content" side="end">
+    <ion-header>
+      <ion-toolbar>
+        <!-- <ion-title></ion-title> -->
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <div class="menu-category">
+        <div>Home</div>
+        <div>Meals</div>
+        <div>All Categories</div>
+        <div>My Bookings</div>
+        <div>Reviews</div>
+        <div>Calendar</div>
+        <div>Careers</div>
+        <div>Gallery</div>
+        <div>About Us<br><hr></div>
+        <br>
+        <div>
+          <ion-button size="small" color="dark" shape="round" class="login-btn">Login</ion-button>
+        </div>
+      </div>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <!-- header of the page -->
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="end">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+          <div class="gg-title">
+            <div><img src="../../assets/icon/gg-logo.png" alt="gg-logo" style="width: 40px; text-align: center;"></div>
+            <div>The Place GianGaela's</div>
+          </div>
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <!-- body of the page -->
+    <ion-content class="ion-padding">
+      <div style="height: 500px;">
+
+      </div>
+      <!-- <div class="event-pic">
+        <img src="../../assets/icon/1.jpg" alt="" class="first-event">
+        <p class="home-event">EVENT 1</p>
+      </div>
+      <div class="event-pic">
+        <img src="../../assets/icon/2.jpg" alt="" class="first-event">
+        <p class="home-event">EVENT 2</p>
+      </div>
+      <div class="event-pic">
+        <img src="../../assets/icon/3.jpg" alt="" class="first-event">
+        <p class="home-event">EVENT 3</p>
+      </div> -->
+      <!-- bottom part of the page -->
+      <div class="bottom-part">
+        <div>
+          <p style="margin-bottom: 0px; font-weight: bold;">FOLLOW US ON SOCIALS</p>
+        </div>
+        <div class="social-media-icons">
+          <div class="icons1"><a href="https://www.facebook.com/profile.php?id=100054265850213"><ion-icon name="logo-facebook"></ion-icon></a></div>
+          <div class="icons1"><ion-icon name="logo-instagram"></ion-icon></div>
+          <div class="icons1"><ion-icon name="logo-twitter"></ion-icon></div>
+        </div>
+        <div>
+          <p style="margin-bottom: 3px; margin-top: 10px; font-weight: bold;">CONTACT US</p>
+        </div>
+        <div>
+          <div class="icons2">
+            <ion-icon name="location-outline"></ion-icon>
+            National Road, Libjo Tacad, Batangas City
+          </div>
+          <div class="icons2">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+            +63 916-379-8315
+          </div>
+          <div class="icons2">
+            <ion-icon name="time-outline"></ion-icon>
+            9AM - 5PM
+          </div>
+        </div>
+      </div>
+    </ion-content>    
+  </div>
+  <!-- <ion-buttons slot="end">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons> -->
+</ion-content>
