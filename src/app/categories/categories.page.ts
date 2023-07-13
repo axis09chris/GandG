@@ -50,6 +50,31 @@ export class CategoriesPage implements OnInit {
         "Purified drinking water"
       ]
     },
+    {
+      title: "Debuts",
+      description: "The Place G&G's Catering Services and Restaurant will throw you a perfect wedding reception, fit only for your unforgettable and once in a lifetime day!",
+      qualifications: [
+        "Selection from a wide array of dishes",
+        "Three-layered (3) fondant cake (only 1st layer is edible) following motif color",
+        "One (1) bottle of champagne for the debutant's family toast",
+        "Refillable soft drinks or fruit punch",
+        "Scheduled food tasting for two (2) persons only",
+        "18 long-stemmed roses for the entourage",
+        "18 candles for the entourage",
+        "Corsage for the mother",
+        "Wrist corsage for the debutant",
+        "Special floral centerpiece for the presidential or head table",
+        "Flower centerpieces and candles for each guest table",
+        "Elegant floral centerpiece for the buffet table",
+        "Signature frame",
+        "Personalized guestbook",
+        "Place cards and menu cards for the sponsors at the presidential table",
+        "All tables dressed in floor length tablecloth, set with table napkins",
+        "Tiffany chairs",
+        "Free giveaways for the first five (5) pairs at the presidential/head table (a special rate will be extended for giveaways)",
+        "Free use of sound system"
+      ]
+    },
   ]
 
   ngOnInit() {

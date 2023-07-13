@@ -8,11 +8,6 @@
     </ion-header>
     <ion-content class="ion-padding">
       <div class="menu-category">
-        <div routerLink="/home"><ion-icon name="home-outline"></ion-icon>&nbsp;&nbsp;Home</div>
-        <div routerLink="/meals"><ion-icon name="fast-food-outline"></ion-icon>&nbsp;&nbsp;Meals</div>
-        <div routerLink="/categories"><ion-icon name="grid-outline"></ion-icon>&nbsp;&nbsp;All Categories</div>
-        <div routerLink="/bookings"><ion-icon name="checkbox-outline"></ion-icon>&nbsp;&nbsp;My Bookings</div>
-        <div routerLink="/reviews"><ion-icon name="star-half-outline"></ion-icon>&nbsp;&nbsp;Reviews</div>
         <div routerLink="/calendar"><ion-icon name="calendar-outline"></ion-icon>&nbsp;&nbsp;Calendar</div>
         <div routerLink="/careers"><ion-icon name="business-outline"></ion-icon>&nbsp;&nbsp;Careers</div>
         <div routerLink="/gallery"><ion-icon name="images-outline"></ion-icon>&nbsp;&nbsp;Gallery</div>
@@ -39,7 +34,8 @@
     </ion-header>
     <!-- body of the page -->
     <ion-content class="ion-padding">
-      <div>
+      <div class="jobs">
+        <img src="../../assets/icon/wedding.jpg" alt="wedding">
         <ion-button color="dark" expand="block" (click)="setOpen(true, 'Wedding')">Wedding and Anniversaries</ion-button>
         <ion-modal [isOpen]="isModalOpen">
           <ng-template>
@@ -52,9 +48,9 @@
               </ion-toolbar>
             </ion-header>
             <ion-content class="ion-padding">
-              <h2>The Place G&G's Classic  Star</h2>
+              <h4>The Place G&G's Classic  Star</h4>
               <p>&nbsp;&nbsp;{{toBeDisplay.description}}</p>
-              <h2>Package Inclusion</h2>
+              <h4>Package Inclusion</h4>
               <p>
               <!-- Loop through the array and display each value -->
                <ng-container *ngFor="let item of toBeDisplay.qualifications">
@@ -66,10 +62,25 @@
           </ng-template>
         </ion-modal>
       </div>
+      <br>
+    <div class="jobs">
+      <div><img src="../../assets/icon/baptismal.jpg" alt="baptismal"></div>
+      <div><ion-button color="dark" expand="block" (click)="setOpen(true, 'Baptismal')">Baptismal & Family Events </ion-button></div>
+    </div>
     <br>
     <div class="jobs">
-      <!-- <div><img src="../../assets/icon/florist.png" alt="Florist"></div> -->
-      <div><ion-button color="dark" expand="block" (click)="setOpen(true, 'Baptismal')">Baptismal</ion-button></div>
+      <div><img src="../../assets/icon/debut.jpg" alt="debuts"></div>
+      <div><ion-button color="dark" expand="block" (click)="setOpen(true, 'Debuts')">Debuts and Birthdays</ion-button></div>
+    </div>
+    <br>
+    <div class="jobs">
+      <div><img src="../../assets/icon/corporate.jpeg" alt="corporate"></div>
+      <div><ion-button color="dark" expand="block" (click)="setOpen(true, 'Debuts')">Corporate Event & Product Lunches</ion-button></div>
+    </div>
+    <br>
+    <div class="jobs">
+      <div><img src="../../assets/icon/meeting.jpg" alt="corporate"></div>
+      <div><ion-button color="dark" expand="block" (click)="setOpen(true, 'Debuts')">Meeting & Seminar Events</ion-button></div>
     </div>
     </ion-content>    
   </div>

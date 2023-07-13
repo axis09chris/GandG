@@ -8,11 +8,7 @@
     </ion-header>
     <ion-content class="ion-padding">
       <div class="menu-category">
-        <div routerLink="/home"><ion-icon name="home-outline"></ion-icon>&nbsp;&nbsp;Home</div>
-        <div routerLink="/meals"><ion-icon name="fast-food-outline"></ion-icon>&nbsp;&nbsp;Meals</div>
-        <div routerLink="/categories"><ion-icon name="grid-outline"></ion-icon>&nbsp;&nbsp;All Categories</div>
-        <div routerLink="/bookings"><ion-icon name="checkbox-outline"></ion-icon>&nbsp;&nbsp;My Bookings</div>
-        <div routerLink="/reviews"><ion-icon name="star-half-outline"></ion-icon>&nbsp;&nbsp;Reviews</div>
+        <div routerLink="/menu/home"><ion-icon name="home-outline"></ion-icon>&nbsp;&nbsp;Home</div>
         <div routerLink="/calendar"><ion-icon name="calendar-outline"></ion-icon>&nbsp;&nbsp;Calendar</div>
         <div routerLink="/careers"><ion-icon name="business-outline"></ion-icon>&nbsp;&nbsp;Careers</div>
         <div routerLink="/gallery"><ion-icon name="images-outline"></ion-icon>&nbsp;&nbsp;Gallery</div>
@@ -55,9 +51,9 @@
                 </ion-toolbar>
               </ion-header>
               <ion-content class="ion-padding">
-                <h2>Job Description</h2>
+                <h4>Job Description</h4>
                 <p>&nbsp;&nbsp;{{toBeDisplay.description}}</p>
-                <h2>Qualifications</h2>
+                <h4>Qualifications</h4>
                 <p>
                 <!-- Loop through the array and display each value -->
                  <ng-container *ngFor="let item of toBeDisplay.qualifications">

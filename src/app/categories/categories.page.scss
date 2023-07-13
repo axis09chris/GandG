@@ -21,16 +21,17 @@ ion-title {
 }
 ion-button {
   display: block;
+  font-size: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 80%;
   --background: #000;
   --color: #fff;
   --border-radius: 20px;
 }
 .menu-category {
   display: grid;
-  grid-template-rows: 35px 35px 35px 35px 35px 35px 35px 35px 50px 35px;
+  grid-template-rows: 35px 35px 35px 50px 35px;
   font-weight: 400;
   font-size: 16px;
   margin-left: 20px;
