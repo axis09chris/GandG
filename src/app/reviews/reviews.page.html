@@ -1,0 +1,176 @@
+<ion-content>
+  //menu or the hamburger menu of the page
+  <ion-menu contentId="main-content" side="end">
+    <ion-header>
+      <ion-toolbar>
+        <!-- <ion-title></ion-title> -->
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <div class="menu-category">
+        <div routerLink="/home"><ion-icon name="home-outline"></ion-icon>&nbsp;&nbsp;Home</div>
+        <div routerLink="/meals"><ion-icon name="fast-food-outline"></ion-icon>&nbsp;&nbsp;Meals</div>
+        <div routerLink="/categories"><ion-icon name="grid-outline"></ion-icon>&nbsp;&nbsp;All Categories</div>
+        <div routerLink="/bookings"><ion-icon name="checkbox-outline"></ion-icon>&nbsp;&nbsp;My Bookings</div>
+        <div routerLink="/reviews"><ion-icon name="star-half-outline"></ion-icon>&nbsp;&nbsp;Reviews</div>
+        <div routerLink="/calendar"><ion-icon name="calendar-outline"></ion-icon>&nbsp;&nbsp;Calendar</div>
+        <div routerLink="/careers"><ion-icon name="business-outline"></ion-icon>&nbsp;&nbsp;Careers</div>
+        <div routerLink="/gallery"><ion-icon name="images-outline"></ion-icon>&nbsp;&nbsp;Gallery</div>
+        <div routerLink="/about"><ion-icon name="people-outline"></ion-icon>&nbsp;&nbsp;About Us<hr></div>
+        <div routerLink="/login"><ion-button>Login</ion-button></div>
+      </div>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <!-- header of the page -->
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="end">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+          <div class="gg-title">
+            <div><img src="../../assets/icon/gg-logo.png" alt="gg-logo" style="width: 40px; text-align: center;"></div>
+            <div>The Place GianGaela's</div>
+          </div>
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <!-- body of the page -->
+    <ion-content class="ion-padding">
+      <div class="review-table">
+        <div><h6>"Suggestions"</h6></div>
+        <div>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquet dolor tincidunt lectus interdum venenatis. 
+            Nam fermentum ligula ut nulla venenatis, sed pellentesque ex consequat. 
+          </p>
+        </div>
+        <div class="review-table-flex">
+          <div><p>John Doe &nbsp;|&nbsp; 7 months ago</p></div>
+          <div>
+            <ion-icon name="thumbs-up-outline"></ion-icon>&nbsp;10
+            <ion-icon name="thumbs-down-outline"></ion-icon>&nbsp;0
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="review-table">
+        <div><h6>"Very Good"</h6></div>
+        <div>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquet dolor tincidunt lectus interdum venenatis. 
+            Nam fermentum ligula ut nulla venenatis, sed pellentesque ex consequat. 
+          </p>
+        </div>
+        <div class="review-table-flex">
+          <div><p>Anne Murray &nbsp;|&nbsp; 10 months ago</p></div>
+          <div>
+            <ion-icon name="thumbs-up-outline"></ion-icon>&nbsp;20
+            <ion-icon name="thumbs-down-outline"></ion-icon>&nbsp;0
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="review-table">
+        <div><h6>"Not Good"</h6></div>
+        <div>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquet dolor tincidunt lectus interdum venenatis. 
+            Nam fermentum ligula ut nulla venenatis, sed pellentesque ex consequat. 
+          </p>
+        </div>
+        <div class="review-table-flex">
+          <div><p>Jane Doe &nbsp;|&nbsp; 1 months ago</p></div>
+          <div>
+            <ion-icon name="thumbs-up-outline"></ion-icon>&nbsp;5
+            <ion-icon name="thumbs-down-outline"></ion-icon>&nbsp;15
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="review-table">
+        <div><h6>"Great Foods"</h6></div>
+        <div>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquet dolor tincidunt lectus interdum venenatis. 
+            Nam fermentum ligula ut nulla venenatis, sed pellentesque ex consequat. 
+          </p>
+        </div>
+        <div class="review-table-flex">
+          <div><p>Joan Magnaye &nbsp;|&nbsp; 4 days ago</p></div>
+          <div>
+            <ion-icon name="thumbs-up-outline"></ion-icon>&nbsp;14
+            <ion-icon name="thumbs-down-outline"></ion-icon>&nbsp;1
+          </div>
+        </div>
+      </div>
+      <div>
+        <ion-button class="add-btn" expand="block" (click)="setOpen(true)"><ion-icon name="add-circle-outline"></ion-icon></ion-button>
+        <ion-modal [isOpen]="isModalOpen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Give Feedback</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpen(false)">Close</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <div class="give-feedback">
+                <div class="star-icon">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+                <div>
+                  <ion-input label="Give your review a title (optional)" label-placement="floating" fill="outline" placeholder="Give your review a title (optional)"></ion-input>
+                </div>
+                <div>
+                  <ion-input label="Share your experience with us" label-placement="floating" fill="outline" placeholder="Share your experience with us"></ion-input>
+                </div>
+                <div>
+                  <ion-button>Submit</ion-button>
+                </div>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </div>
+    </ion-content>    
+  </div>
+</ion-content>
+

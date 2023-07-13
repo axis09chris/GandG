@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ion-content{
+  --ion-background-color: #121111;
+}
+
+.first {
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  margin-top: 90px;
+  color: #5ed757;
+}
+.gg-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+.gg-title {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 35px;
+}
+.second {
+  font-family: 'Poppins', sans-serif;
+  color: #5ed757;
+  display: grid;
+  grid-template-rows: 110px 110px 110px 50px 1fr;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.second-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+ion-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  --background: #000;
+  --color: #fff;
+  --border-radius: 20px;
+}
+ion-button:hover {
+  --border-color: #5ed757;
+  --border-style: solid;
+  --border-width: 1px;
+  --color: #5ed757;
+}
+ion-input{
+  --font-family: 'Poppins', sans-serif;
+  --background: #000;
+  --color: #fff;
+  --border: 10px solid #2a2929;
+  --padding-end: 10px;
+  --padding-start: 10px;
+  --border-radius: 10px;
+}
+.third-text {
+  font-family: 'Poppins', sans-serif;
+  color: #5ed757;
+  text-align: center;
+}
+span {
+  cursor: pointer;
+  text-decoration: underline;
+}

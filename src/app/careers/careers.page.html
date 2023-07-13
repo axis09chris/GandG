@@ -1,0 +1,95 @@
+<ion-content>
+  //menu or the hamburger menu of the page
+  <ion-menu contentId="main-content" side="end">
+    <ion-header>
+      <ion-toolbar>
+        <!-- <ion-title></ion-title> -->
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <div class="menu-category">
+        <div routerLink="/home"><ion-icon name="home-outline"></ion-icon>&nbsp;&nbsp;Home</div>
+        <div routerLink="/meals"><ion-icon name="fast-food-outline"></ion-icon>&nbsp;&nbsp;Meals</div>
+        <div routerLink="/categories"><ion-icon name="grid-outline"></ion-icon>&nbsp;&nbsp;All Categories</div>
+        <div routerLink="/bookings"><ion-icon name="checkbox-outline"></ion-icon>&nbsp;&nbsp;My Bookings</div>
+        <div routerLink="/reviews"><ion-icon name="star-half-outline"></ion-icon>&nbsp;&nbsp;Reviews</div>
+        <div routerLink="/calendar"><ion-icon name="calendar-outline"></ion-icon>&nbsp;&nbsp;Calendar</div>
+        <div routerLink="/careers"><ion-icon name="business-outline"></ion-icon>&nbsp;&nbsp;Careers</div>
+        <div routerLink="/gallery"><ion-icon name="images-outline"></ion-icon>&nbsp;&nbsp;Gallery</div>
+        <div routerLink="/about"><ion-icon name="people-outline"></ion-icon>&nbsp;&nbsp;About Us<hr></div>
+        <div routerLink="/login"><ion-button>Login</ion-button></div>
+      </div>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <!-- header of the page -->
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="end">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+          <div class="gg-title">
+            <div><img src="../../assets/icon/gg-logo.png" alt="gg-logo" style="width: 40px; text-align: center;"></div>
+            <div>The Place GianGaela's</div>
+          </div>
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <!-- body of the page -->
+    <ion-content class="ion-padding">
+      <div class="jobs">
+        <div><img src="../../assets/icon/catering-manager.png" alt="catering-manager"></div>
+        <div>
+          <ion-button color="dark" expand="block" (click)="setOpen(true, 'Catering Manager')">Catering Manager</ion-button>
+          <ion-modal [isOpen]="isModalOpen">
+            <ng-template>
+              <ion-header>
+                <ion-toolbar>
+                  <ion-title>{{toBeDisplay.title}}</ion-title>
+                  <ion-buttons slot="end">
+                    <ion-button (click)="setOpen(false, '')">Close</ion-button>
+                  </ion-buttons>
+                </ion-toolbar>
+              </ion-header>
+              <ion-content class="ion-padding">
+                <h2>Job Description</h2>
+                <p>&nbsp;&nbsp;{{toBeDisplay.description}}</p>
+                <h2>Qualifications</h2>
+                <p>
+                <!-- Loop through the array and display each value -->
+                 <ng-container *ngFor="let item of toBeDisplay.qualifications">
+                    -&nbsp;{{ item }}&nbsp;
+                    <br>
+                  </ng-container>
+                </p>
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+        </div>
+      </div>
+      <br>
+      <div class="jobs">
+        <div><img src="../../assets/icon/florist.png" alt="Florist"></div>
+        <div><ion-button color="dark" expand="block" (click)="setOpen(true, 'Florist')">Florist</ion-button></div>
+      </div>
+      <br>
+      <div class="jobs">
+        <div><img src="../../assets/icon/marketing-staff.png" alt="marketing-staff"></div>
+        <div><ion-button color="dark" expand="block" (click)="setOpen(true, 'Marketing Staff')">Marketing Staff</ion-button></div>
+      </div>
+      <br>
+      <div class="jobs">
+        <div><img src="../../assets/icon/chef.jpg" alt="chef"></div>
+        <div><ion-button color="dark" expand="block" (click)="setOpen(true, 'R&D Chef')">R&D Chef</ion-button></div>
+      </div>
+      <br>
+      <div class="jobs">
+        <div><img src="../../assets/icon/account-executive.png" alt="account-executive"></div>
+        <div><ion-button color="dark" expand="block" (click)="setOpen(true, 'Accounts Executive')">Accounts Executive</ion-button></div>
+        </div>
+    </ion-content>    
+  </div>
+</ion-content>
