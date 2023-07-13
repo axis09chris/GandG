@@ -39,7 +39,38 @@
     </ion-header>
     <!-- body of the page -->
     <ion-content class="ion-padding">
-      
+      <div>
+        <ion-button color="dark" expand="block" (click)="setOpen(true, 'Wedding')">Wedding and Anniversaries</ion-button>
+        <ion-modal [isOpen]="isModalOpen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>{{toBeDisplay.title}}</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpen(false, '')">Close</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <h2>The Place G&G's Classic  Star</h2>
+              <p>&nbsp;&nbsp;{{toBeDisplay.description}}</p>
+              <h2>Package Inclusion</h2>
+              <p>
+              <!-- Loop through the array and display each value -->
+               <ng-container *ngFor="let item of toBeDisplay.qualifications">
+                  -&nbsp;{{ item }}&nbsp;
+                  <br>
+                </ng-container>
+              </p>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </div>
+    <br>
+    <div class="jobs">
+      <!-- <div><img src="../../assets/icon/florist.png" alt="Florist"></div> -->
+      <div><ion-button color="dark" expand="block" (click)="setOpen(true, 'Baptismal')">Baptismal</ion-button></div>
+    </div>
     </ion-content>    
   </div>
 </ion-content>
