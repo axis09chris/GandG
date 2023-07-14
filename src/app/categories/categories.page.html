@@ -58,6 +58,22 @@
                   <br>
                 </ng-container>
               </p>
+              <h4>We also provide other services with corresponding rates such us:</h4>
+              <p>
+                <!-- Loop through the array and display each value -->
+                <ng-container *ngFor="let item of toBeDisplay.services">
+                  -&nbsp;{{ item }}&nbsp;
+                  <br>
+                </ng-container>
+              </p>
+              <h4>Terms and Condition</h4>
+              <p>
+                <!-- Loop through the array and display each value -->
+                <ng-container *ngFor="let item of toBeDisplay.terms">
+                  -&nbsp;{{ item }}&nbsp;
+                  <br>
+                </ng-container>
+              </p>
             </ion-content>
           </ng-template>
         </ion-modal>

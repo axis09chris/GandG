@@ -158,7 +158,14 @@
                   <ion-input label="Share your experience with us" label-placement="floating" fill="outline" placeholder="Share your experience with us"></ion-input>
                 </div>
                 <div>
-                  <ion-button>Submit</ion-button>
+                  <!-- <ion-button>Submit</ion-button> -->
+                  <ion-button id="submit-alert">Submit</ion-button>
+                  <ion-alert
+                    trigger="submit-alert"
+                    header="Feedback alert"
+                    message="Successfully send feedback"
+                    [buttons]="alertButtons"
+                  ></ion-alert>
                 </div>
               </div>
             </ion-content>

@@ -11,6 +11,7 @@ export class ReviewsPage implements OnInit {
 
   ngOnInit() {
   }
+  public alertButtons = ['OK'];
 
   isModalOpen = false;
 

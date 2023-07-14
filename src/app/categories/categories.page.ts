@@ -34,6 +34,24 @@ export class CategoriesPage implements OnInit {
         "Use of bridal car within city limits and maximum of 3 hours only (in excess of 3 hours, charge of PhP1,000.00/hr. to be paid directly to the driver)",
         "Program emcee for the reception",
         "FREE hotel room accommodation for two (2) persons"
+      ],
+      services: [
+        "Bridal Car Rental",
+        "Photo and Video Coverage", 
+        "Bridal and Entourage Attire",
+        "Church and Entourage Flower Arrangement",
+        "Live Entertainment",
+        "Souvenir Items",
+        "Invitations",
+        "Wedding Consultancy",
+        "Coordination and Emceeing",
+        "Audio Equipment and other party needs"
+      ],
+      terms: [
+        "Rates are subject to change without prior notice",
+        "Other optional items and services mentioned above must be coordinated with the Account Executive in charge of the function at least one (1) week prior to the event.",
+        "A non-refundable and non-transferrable reservation fee of PhP 10,000.00 is required and can be paid in cash, check, or any acceptable credit card.",
+        "A 50% deposit of the estimated contract package will be required upon signing of the catering contract. Full payment shall be settled two (2) weeks prior to the event. Incidental charges incurred during the event must be settled immediately after the function in cash or credit card only. No checks will be accepted on the day of the function. Send Bill arrangement will not be honored."
       ]
     },
     {
@@ -48,6 +66,21 @@ export class CategoriesPage implements OnInit {
         "Waiter service",
         "Refillable iced tea or soft drinks",
         "Purified drinking water"
+      ],
+      services: [
+        "Buffet lunch/dinner Php 610.00 / person",
+        "Buffet lunch/dinner Php 675.00 / person",
+        "Buffet lunch/dinner Php 740.00 / person",
+        "Buffet lunch/dinner Php 875.00 / person",
+        "Children's party menu Php 350.00 / person",
+      ],
+      terms: [
+        "Rates are subject to change without prior notice.",
+        "Should the package rates quoted increase before the event day, the new rate will apply.",
+        "Other optional items and services mentioned above must be coordinated with the Account Executive in charge of the function at least a week prior to the event.",
+        "A NON-REFUNDABLE and NON-TRANSFERRABLE reservation fee of PhP 10,000.00 is REQUIRED and can be paid in cash or check. (Check payable to TAMAYO'S FRANCHISING CORP.)",
+        "A 50% deposit of the estimated package cost will be required upon signing of catering contract. Full payment shall be settled two weeks prior to the vevent. Incidental charges incurred during the event must be settled immediately after the function in cash. No checks will be accepted on the day of the function. Send bill arrangement will not be honored.",
+        "Replacing or removing amenities is not encouraged."
       ]
     },
     {
@@ -73,6 +106,25 @@ export class CategoriesPage implements OnInit {
         "Tiffany chairs",
         "Free giveaways for the first five (5) pairs at the presidential/head table (a special rate will be extended for giveaways)",
         "Free use of sound system"
+      ],
+      services: [
+        "Bridal Car Rental",
+        "Photo and Video Coverage", 
+        "Bridal and Entourage Attire",
+        "Church and Entourage Flower Arrangement",
+        "Live Entertainment",
+        "Souvenir Items",
+        "Invitations",
+        "Wedding Consultancy",
+        "Coordination and Emceeing",
+        "Audio Equipment and other party needs"
+      ],
+      terms: [
+        "Rates are subject to change without prior notice",
+        "Other optional items and services mentioned above must be coordinated with the Account Executive in charge of the function at least one (1) week prior to the event.",
+        "A non-refundable and non-transferrable reservation fee of PhP 10,000.00 is required and can be paid in cash, check, or any acceptable credit card.",
+        "A 50% deposit of the estimated contract package will be required upon signing of the catering contract. Full payment shall be settled two (2) weeks prior to the event. Incidental charges incurred during the event must be settled immediately after the function in cash or credit card only. No checks will be accepted on the day of the function. Send Bill arrangement will not be honored.",
+        "Replacing or removing amenities is not encouraged."
       ]
     },
   ]
