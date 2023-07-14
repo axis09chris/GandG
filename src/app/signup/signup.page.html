@@ -23,7 +23,14 @@
     </div>
     <div>
       <!-- <ion-button size="small" color="dark" shape="round" class="signup-btn">Sign up</ion-button> -->
-      <ion-button size="small">Sign up</ion-button>
+      <!-- <ion-button size="small">Sign up</ion-button> -->
+      <ion-button id="sign-up-alert">Sign up</ion-button>
+      <ion-alert
+        trigger="sign-up-alert"
+        header="Sign up alert"
+        message="Thanks, you have successfully signed up"
+        [buttons]="alertButtons"
+      ></ion-alert>
     </div>
   </div>
   <div class="third-text">
