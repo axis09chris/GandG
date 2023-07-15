@@ -38,7 +38,9 @@ ion-button {
   align-items: center;
 }
 hr {
-  border: 1px solid #ffffff;
+  border: 1px solid #000;
+  background-color: #000;
+  height: 1px;
 }
 .client-info {
   font-family: 'Poppins', sans-serif;

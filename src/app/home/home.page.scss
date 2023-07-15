@@ -35,11 +35,15 @@ ion-button {
   font-weight: 400;
   font-size: 16px;
   margin-left: 20px;
+  margin-right: 20px;
   font-family: 'Poppins', sans-serif;
   align-items: center;
 }
 hr {
-  border: 1px solid #ffffff;
+  border: 1px solid #000;
+  height: 1px;
+  background-color: #000;
+
 }
 .jobs {
   display: block;
@@ -47,7 +51,7 @@ hr {
   margin-right: auto;
   align-items: center;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 0px 0px 5px 0px;
 }

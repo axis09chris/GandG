@@ -38,11 +38,16 @@ ion-button {
   align-items: center;
 }
 hr {
-  border: 1px solid #fff;
+  border: 1px solid #000;
+  height: 1px;
+  background-color: #000;
 }
 img {
   border-radius: 10px;
 }
 .ion-padding {
   font-family: 'Poppins', sans-serif;
+}
+p {
+  font-weight: bold;
 }
