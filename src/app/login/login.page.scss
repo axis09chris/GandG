@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+ion-content.content {
+  --background: url(../../assets/icon/bg.png);
+}
 .first {
   display: grid;
   grid-template-rows: 1fr 100px;
   margin-top: 90px;
+  color: #000;
 }
 .gg-logo {
   display: block;
@@ -15,19 +19,19 @@
 .gg-title {
   text-align: center;
   font-family: 'Pacifico', cursive;
-  font-size: 35px;
+  font-size: 30px;
 }
 .second {
   font-family: 'Poppins', sans-serif;
   display: grid;
   grid-template-rows: 70px 70px 50px 1fr;
-  // row-gap: 5px;
   margin-left: 20px;
   margin-right: 20px;
 }
 ion-button {
-  --background: #000;
-  --color: #fff;
+  // --background: #78b075;
+  --background: #fac43a;
+  --color: #000;
   border-radius: 50px;
   box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.05);
 }
@@ -36,10 +40,12 @@ ion-input{
   --align-items: center;
   --padding-end: 10px;
   --padding-start: 10px;
+  color: #000;
 }
 .third-text {
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  color: #000;
 }
 span {
   cursor: pointer;
