@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 ion-title {
   position: absolute;
@@ -11,13 +11,13 @@ ion-title {
   text-align: start;
 }
 .gg-title {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  align-items: center;
-  font-family: 'Gelasio', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
-.logo-gg {
-  width: 40px;
+.upper-logo {
+  display: grid;
+  grid-template-rows: 100px 50px;
+  align-items: center;row-gap: 5px;
 }
 .ion-padding {
   font-family: 'Poppins', sans-serif;
@@ -59,7 +59,7 @@ h5{
 p {
   display: block;
   text-align: justify;
-  font-size: 12px;
+  font-size: 14px;
 }
 img {
   display: block;

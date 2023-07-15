@@ -11,10 +11,8 @@ ion-title {
   text-align: start;
 }
 .gg-title {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  align-items: center;
-  font-family: 'Gelasio', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
 .logo-gg {
   width: 40px;
@@ -52,7 +50,7 @@ p {
   display: block;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 img {
   display: block;
