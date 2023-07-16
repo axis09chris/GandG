@@ -11,5 +11,6 @@ export class BookingsPage implements OnInit {
 
   ngOnInit() {
   }
+  public alertButtons = ['OK'];
 
 }

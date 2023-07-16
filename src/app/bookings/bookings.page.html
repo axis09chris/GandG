@@ -102,7 +102,15 @@
           </div>
         </div>
         <hr>
-        
+        <div>
+          <ion-button id="booking-alert" expand="block" shape="round">Submit</ion-button>
+          <ion-alert
+            trigger="booking-alert"
+            header="Booking alert"
+            message="You successfully created your booking!"
+            [buttons]="alertButtons"
+          ></ion-alert>
+        </div>
     </ion-content>    
   </div>
 </ion-content>
