@@ -21,17 +21,18 @@ ion-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
-  --background: #000;
+  width: 80%;
+  --background: #020202;
   --color: #fff;
   --border-radius: 20px;
 }
 .menu-category {
   display: grid;
-  grid-template-rows: 35px 35px 35px 50px 35px;
-  font-weight: 400;
-  font-size: 16px;
+  grid-template-rows: 40px 40px 40px 50px 40px;
+  row-gap: 10px;
+  font-size: 20px;
   margin-left: 20px;
+  margin-right: 20px;
   font-family: 'Poppins', sans-serif;
   align-items: center;
 }
@@ -44,11 +45,23 @@ hr {
   font-family: 'Poppins', sans-serif;
   align-items: center;
   display: grid;
-  grid-template-rows: 40px 1fr 1fr 1fr 1fr 1fr 40px;
+  grid-template-rows: 30px 1fr 1fr 1fr 1fr 1fr;
   row-gap: 5px;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 10px;
-  border-radius: 10px;
+}
+.event-detail {
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  display: grid;
+  grid-template-rows: 30px 2fr 1fr 90px 90px 90px;
+  row-gap: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.client-info-tab,
+.event-info-tab {
+  align-items: center;
+  display: grid;
+  grid-template-rows: 20px 1fr;
 }
 p {
   margin: 5px 0px;
@@ -56,4 +69,7 @@ p {
 h6 {
   font-weight: bold;
   margin: 5px 0px;
+}
+ion-input {
+  font-family: 'Poppins', sans-serif;
 }

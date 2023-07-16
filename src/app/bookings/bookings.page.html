@@ -38,33 +38,72 @@
           <div>
             <h6>Client Information</h6>
           </div>
-          <div>
+          <div class="client-info-tab">
             <p>First Name :</p>
             <ion-input label-placement="floating" fill="outline" placeholder="First Name"></ion-input>
           </div>
-          <div>
+          <div class="client-info-tab">
             <p>Last Name :</p>
             <ion-input label-placement="floating" fill="outline" placeholder="Last Name"></ion-input>
           </div>
-          <div>
+          <div class="client-info-tab">
             <p>Email :</p>
             <ion-input label-placement="floating" fill="outline" placeholder="Email"></ion-input>
           </div>
-          <div>
+          <div class="client-info-tab">
             <p>Mobile No. :</p>
           <ion-input label-placement="floating" fill="outline" placeholder="Mobile Number"></ion-input>
           </div>
-          <div>
+          <div class="client-info-tab">
             <p>Landline No. :</p>
             <ion-input label-placement="floating" fill="outline" placeholder="Landline Number"></ion-input>
           </div>
+        </div>
+        <hr>
+        <div class="event-detail">
           <div>
-            <ion-button>NEXT</ion-button>
+            <h6>Event Details</h6>
+          </div>
+          <div class="event-info-tab">
+            <p>Date :</p>
+            <ion-datetime presentation="date"></ion-datetime>
+            </div>
+          <div class="event-info-tab">
+            <p>Time :</p>
+            <ion-datetime presentation="time"></ion-datetime>
+          </div>
+          <div class="event-info-tab">
+            <p>Number of guests :</p>
+            <ion-input label-placement="floating" fill="outline" placeholder="Number of guests"></ion-input>
+          </div>
+          <div class="event-info-tab">
+            <p>Type of event :</p>
+            <ion-list>
+              <ion-item>
+                <ion-select label-placement="floating">
+                  <ion-select-option value="wedding">Wedding</ion-select-option>
+                  <ion-select-option value="debut">Debut</ion-select-option>
+                  <ion-select-option value="birthday">Birthday</ion-select-option>
+                  <ion-select-option value="chirstening">Christening</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-list>            
+          </div>
+          <div class="event-info-tab">
+            <p>Type of venue :</p>
+            <ion-list>
+              <ion-item>
+                <ion-select label-placement="floating">
+                  <ion-select-option value="indoor">Indoor</ion-select-option>
+                  <ion-select-option value="outdoor">Outdoor</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-list>
           </div>
         </div>
-        <div class="event-detail">
-          
-        </div>
+        <hr>
+        
     </ion-content>    
   </div>
 </ion-content>
+
